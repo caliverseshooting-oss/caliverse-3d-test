@@ -136,7 +136,7 @@
     );
     camera.filmGauge = 36;
     camera.setFocalLength(FOCAL_LENGTH);
-    camera.position.set(0.211824, 0.211824, 0.847296);
+    camera.position.set(0.142692, 0.131699, 0.616236);
 
     const renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
@@ -152,7 +152,7 @@
     scene.add(spark);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.target.set(0, 0, 0);
+    controls.target.set(-0.00949338, -0.0204858, 0.0074948);
     controls.saveState();
     controls.update();
 

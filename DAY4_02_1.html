@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DAY4_02</title>
+  <title>DAY4_02_1</title>
   <link rel="icon" type="image/svg+xml" href="https://static.jawset.com/website/psht/postshot-icon.svg" />
   <style>
     html, body { margin: 0; height: 100%; overflow: hidden; background: #0f0f14; }
@@ -136,7 +136,7 @@
     );
     camera.filmGauge = 36;
     camera.setFocalLength(FOCAL_LENGTH);
-    camera.position.set(0.206147, 0.206147, 0.824589);
+    camera.position.set(0.203299, 0.0358221, 0.582236);
 
     const renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
@@ -152,11 +152,11 @@
     scene.add(spark);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.target.set(0, 0, 0);
+    controls.target.set(0.0379503, 0.00196292, 0.0286408);
     controls.saveState();
     controls.update();
 
-    const splat = new SplatMesh({ url: "DAY4_02.spz" });
+    const splat = new SplatMesh({ url: "DAY4_02_1.spz" });
 
     splat.quaternion.set(1, 0, 0, 0);
     splat.position.set(0, 0, 0);
