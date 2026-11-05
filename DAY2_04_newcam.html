@@ -6,7 +6,7 @@
   <title>DAY2_04_newcam</title>
   <link rel="icon" type="image/svg+xml" href="https://static.jawset.com/website/psht/postshot-icon.svg" />
   <style>
-    html, body { margin: 0; height: 100%; overflow: hidden; background: #0f0f14; }
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #ffffff; }
 
     #help-btn {
       position: absolute; top: 12px; left: 12px;
@@ -62,11 +62,11 @@
     #loading {
       position: absolute; inset: 0; display: flex; flex-direction: column;
       align-items: center; justify-content: center; gap: 14px;
-      font-family: system-ui, sans-serif; font-size: 16px; color: #cfd2da;
+      font-family: system-ui, sans-serif; font-size: 16px; color: #30343b;
     }
     #loading .spinner {
       width: 32px; height: 32px; border-radius: 50%;
-      border: 3px solid rgba(255, 255, 255, 0.15);
+      border: 3px solid rgba(0, 0, 0, 0.15);
       border-top-color: #4c9aff;
       animation: spin 0.8s linear infinite;
     }
@@ -129,6 +129,7 @@
     import { SparkRenderer, SplatMesh, modifiers, dyno } from "@sparkjsdev/spark";
 
     const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xffffff);
 
     const FOCAL_LENGTH = 30;
     const camera = new THREE.PerspectiveCamera(
